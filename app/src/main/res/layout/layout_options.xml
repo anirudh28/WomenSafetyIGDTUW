@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+    <ImageView
+        android:layout_margin="@dimen/ico_margin"
+        android:src="@drawable/sos"
+        android:id="@+id/ivSOS"
+        android:layout_width="@dimen/ico_size"
+        android:layout_height="@dimen/ico_size" />
+    <ImageView
+        android:layout_margin="@dimen/ico_margin"
+        android:src="@drawable/taxi"
+        android:id="@+id/ivTaxi"
+        android:layout_width="@dimen/ico_size"
+        android:layout_height="@dimen/ico_size" />
+    <ImageView
+        android:layout_margin="@dimen/ico_margin"
+        android:src="@drawable/map"
+        android:id="@+id/ivMap"
+        android:layout_width="@dimen/ico_size"
+        android:layout_height="@dimen/ico_size" />
+    <ImageView
+        android:layout_margin="@dimen/ico_margin"
+        android:src="@drawable/helpline"
+        android:id="@+id/ivHelplineNos"
+        android:layout_width="@dimen/ico_size"
+        android:layout_height="@dimen/ico_size" />
+    <ImageView
+        android:layout_margin="@dimen/ico_margin"
+        android:src="@drawable/defence_icon_blue"
+        android:id="@+id/ivSelfDefense"
+        android:layout_width="@dimen/ico_size"
+        android:layout_height="@dimen/ico_size" />
+    <ImageView
+        android:layout_margin="@dimen/ico_margin"
+        android:src="@drawable/aboutus"
+        android:id="@+id/ivAbout"
+        android:layout_width="@dimen/ico_size"
+        android:layout_height="@dimen/ico_size" />
+    <ImageView
+        android:layout_margin="@dimen/ico_margin"
+        android:src="@drawable/contactus"
+        android:id="@+id/ivContactUs"
+        android:layout_width="@dimen/ico_size"
+        android:layout_height="@dimen/ico_size" />
+</LinearLayout>

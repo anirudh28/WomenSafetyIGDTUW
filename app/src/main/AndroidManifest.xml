@@ -2,15 +2,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.techno.womensafety">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAGoVK6CUsL4PaDFSeFXC9GMissapwCeG4" />
         <activity
             android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,6 +31,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Yoo" />
+        <activity android:name=".Yoo2" />
+        <activity android:name=".Web_View" />
+
+        <service
+            android:name=".SMSService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".PowerBtnPressList"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF"></action>
+                <action android:name="android.intent.action.SCREEN_ON"></action>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"></action>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"></action>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"></action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

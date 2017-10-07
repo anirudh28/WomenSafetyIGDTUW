@@ -1,4 +1,21 @@
 <resources>
-    <string name="app_name">Women Safety</string>
+    <string name="app_name">Asmita - Women Safety</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_start">StartActivity</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Make SOS call!</string>
+    <string name="slide_1_desc">make sos call by pressing power button!</string>
+
+    <string name="slide_2_title">Safest Route</string>
+    <string name="slide_2_desc">find the safest route to your destionation based on crime artes and user reviews</string>
+
+    <string name="slide_3_title">Emergency Taxi</string>
+    <string name="slide_3_desc">Instantly call a taxi in emergency situation</string>
+
+    <string name="slide_4_title">Scream for help</string>
+    <string name="slide_4_desc">call for help by screaming or shaking your phone</string>
 </resources>
